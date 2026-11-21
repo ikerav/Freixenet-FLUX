@@ -95,6 +95,11 @@ body.view-control .presets button{font-size:14px;min-height:56px;text-align:cent
 body.view-control details{margin-top:20px}
 @media(max-width:600px){body.view-screen .stats{grid-template-columns:1fr}body.view-control .presets{grid-template-columns:repeat(2,minmax(0,1fr))} .flux-room{align-items:flex-start}.flux-qr{width:130px;height:130px}}
 
+/* Ocultar elementos del control remoto en el modo normal */
+body:not(.view-screen):not(.view-control) .flux-remote-only {
+    display: none;
+}
+
 </style>
 </head>
 <body>
